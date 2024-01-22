@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font Cormorant Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- font Sawarabi Mincho -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+    <!-- font Noto Sans Japanese -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="brand-name">
+                <img src="./images/top/Ellipse_101.png" alt="">
+                <h3>NEW BRAND NAME</h3>
+            </div>
+            <nav id="navbar" class="">
+                <ul class="navbar">
+                    <li><a href="#">CONCEPT</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">NEWS & BLOG</a></li>
+                    <li><a href="#">INFO & ACCESS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <div class="button">
+                    <a href="#">CORPORATE SITE</a>
+                </div>
+            </nav>
+            <div class="collapse-btn" onclick="onToggleNavbar()"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div class="banner__img">
+                <img src="./images/top/main01.png" alt="">
+            </div>
+            <div class="scroll">SCROLL DOWN</div>
+        </div>
+    </section>
+    <section class="concept">
+        <div class="container">
+            <div class="concept__img">
+                <img src="./images/top/img_01.png" alt="">
+            </div>
+            <div class="concept__content">
+                <p class="subTitle">CONCEPT</p>
+                <h3 class="title">題名題名題名題名題名</h3>
+                <p class="text">
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテテキストテキストテテ
+                </p>
+                <p class="text">ストテキストテキストテキストテキスト。</p>
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="container">
+            <div class="title">
+                <h2>NEWS & BLOG</h2>
+                <h3>おしらせ</h3>
+            </div>
+            <div class="content">
+                <div class="content__left">
+                    <div class="subTitle">
+                        <h3>ニュース</h3>
+                        <div class="seemore">
+                            <a href="#">SEE MORE <i class="fa-solid fa-arrow-right-long"></i></a>
+                            <div class="seemore__overlay"></div>
+                        </div>
+                    </div>
+                    <div id="item-list-left"></div>
+                </div>
+
+                <div class="content__right">
+                    <div class="subTitle">
+                        <h3>ブログ</h3>
+                        <div class="seemore">
+                            <a href="#">SEE MORE <i class="fa-solid fa-arrow-right-long"></i></a>
+                            <div class="seemore__overlay"></div>
+                        </div>
+                    </div>
+                    <div id="item-list-right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__upper">
+            <div class="footer__upper__container">
+                <div class="options">
+                    <ul>
+                        <li><a href="#">CONCEPT</a></li>
+                        <li><a href="#">NEWS & BLOG</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">PROJECT</a></li>
+                        <li><a href="#">INFO & ACCESS</a></li>
+                    </ul>
+                </div>
+                <div class="button">
+                    <div class="forward">
+                        <a href="#" class="text">新しいブランド名 コーポレートサイトはこちら</a>
+                    </div>
+                    <div class="backward">
+                        <a href="#">フタムラグリーンサービス コーポレートサイトはこちら
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="to-top" onclick="onBackToTop()">
+                <div class="to-top__content">TO TOP</div>
+            </div>
+        </div>
+        <div class="footer__lower">
+            <div class="container">
+                <div class="button">
+                    <div class="forward">
+                        <a href="#" class="text">新しいブランド名 コーポレートサイトはこちら</a>
+                    </div>
+                    <div class="backward">
+                        <a href="#">フタムラグリーンサービス コーポレートサイトはこちら
+                        </a>
+                    </div>
+                </div>
+                <div class="brand-name">
+                    <div class="logo">
+                        <img src="./images/top/Ellipse_101.png" alt="">
+                        <h3>NEW BRAND NAME</h3>
+                    </div>
+                    <div class="social-link">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    © 2021 New Brand Name
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
