@@ -409,7 +409,6 @@ footer .footer__upper .options ul a {
 }
 
 footer .button {
-    width: 520px;
     height: 64px;
     font-size: 12px;
     position: relative;
@@ -601,6 +600,11 @@ footer .footer__lower .copyright {
         height: max-content;
     }
 
+    footer .button .forward,
+    footer .button .backward {
+        padding: 0 60px;
+    }
+
     footer .footer__upper__container {
         padding: 30px 60px;
     }
@@ -711,6 +715,16 @@ footer .footer__lower .copyright {
 
     footer {
         height: 320px;
+    }
+
+    footer .button {
+        width: max-content;
+    }
+
+    footer .button .forward,
+    footer .button .backward {
+        padding: 0 80px;
+        width: max-content;
     }
 
     footer .footer__upper__container {
